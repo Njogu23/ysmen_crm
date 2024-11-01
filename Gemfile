@@ -39,6 +39,12 @@ gem "devise"
 
 gem "active_model_serializers"
 
+# Gemfile
+gem 'sass-rails', '>= 6'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 5.0.0'
+
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
