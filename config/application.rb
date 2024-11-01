@@ -31,6 +31,6 @@ module YsmenCrm
 
     # Add asset pipeline middleware
     
-    config.middleware.use ActionDispatch::Static, "#{Rails.root}/public"
+    config.assets.enabled = false
   end
 end

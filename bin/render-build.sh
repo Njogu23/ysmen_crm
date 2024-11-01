@@ -5,11 +5,8 @@ set -o errexit
 # Install Ruby gems
 bundle install
 
-# Precompile assets for production
-bundle exec rails assets:precompile
-
-# Clean up old assets
-bundle exec rails assets:clean
+# (Optional) Uncomment the next line if your app needs seeded data on deploy
+# bundle exec rake db:seed
 
 # Run database migrations
 # If this is the first deployment and the database has not been created,
@@ -18,7 +15,3 @@ bundle exec rails assets:clean
 
 # Run database migrations
 bundle exec rails db:migrate
-
-# Optionally, seed the database with initial data
-# Uncomment the line below if your app needs seeded data on deploy
-# bundle exec rake db:seed
